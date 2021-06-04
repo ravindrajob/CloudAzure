@@ -45,7 +45,6 @@ $apps = Get-AzADApplication
 #In my case i want to scan only a specific appsregistration
 $OurAppRegistration = @('rj-fr-','rj-dev-')
 
-
 foreach ($app in $apps) 
     { 
      $Name = $app.DisplayName
