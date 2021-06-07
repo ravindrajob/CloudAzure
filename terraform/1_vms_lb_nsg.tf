@@ -12,7 +12,23 @@ data "azurerm_subnet" "subnet_1" {
   virtual_network_name = azurerm_virtual_network.sandbox_vnet.name
 }
 
-# TODO : Add LB
+resource "azurerm_public_ip" "sandbox_pip" {
+  name                = "sandox-lb-pip"
+  location            = data.azurerm_resource_group.sandbox_rg.location
+  resource_group_name = data.azurerm_resource_group.sandbox_rg.name
+  allocation_method   = "Static"
+}
+
+resource "azurerm_lb" "sandbox_lb" {
+  name                = "sandbox-lb"
+  location            = data.azurerm_resource_group.sandbox_rg.location
+  resource_group_name = data.azurerm_resource_group.sandbox_rg.name
+
+  frontend_ip_configuration {
+    name                 = "PublicIPAddress"
+    public_ip_address_id = azurerm_public_ip.sandbox_pip.id
+  }
+}
 
 resource "azurerm_network_security_group" "nsg_sandbox" {
   name                = "sandbox-nsg"
