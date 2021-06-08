@@ -1,3 +1,4 @@
+# Reference resources created in another tfstate 
 data "azurerm_resource_group" "sandbox_rg" {
   name = "sandbox"
 }
@@ -12,6 +13,7 @@ data "azurerm_subnet" "subnet_1" {
   virtual_network_name = azurerm_virtual_network.sandbox_vnet.name
 }
 
+# Create private Load Balancer
 resource "azurerm_lb" "sandbox_lb" {
   name                = "sandbox-lb"
   location            = data.azurerm_resource_group.sandbox_rg.location
@@ -24,6 +26,7 @@ resource "azurerm_lb" "sandbox_lb" {
   }
 }
 
+# Create NSG
 resource "azurerm_network_security_group" "nsg_sandbox" {
   name                = "sandbox-nsg"
   location            = data.azurerm_resource_group.sandbox_rg.location
