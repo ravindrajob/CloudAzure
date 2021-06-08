@@ -4,9 +4,10 @@ In our case, we want resolve azure private FQDN with Azure DNS, and resolve my l
 Actually is not possible to use azure dns to forward to legacy dns.
 More information on Azure private dns and this limit here : https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-dns
 
-## Limit actual
+## Quota & Limit
 DNS forwarding also enables DNS resolution between virtual networks, and allows your on-premises machines to resolve Azure-provided host names. In order to resolve a VM's host name, the DNS server VM must reside in the same virtual network, and be configured to forward host name queries to Azure
 
+more information here : https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits
 ## Configuration
 To configure properly, we need :
 
