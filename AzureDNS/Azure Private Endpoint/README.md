@@ -19,7 +19,7 @@ To configure properly, we need :
 The following diagram shows the DNS resolution for both networks, on-premises and virtual networks
 
 # High level diagram
-![alt text](https://ravindrajob.blob.core.windows.net/assets/FW-AzureDNS2Legacy-HL.png)
+![alt text](https://ravindrajob.blob.core.windows.net/assets/FW-AzureDNS2Legacy-HL2.png)
 
 # Infrastructure level diagram
 ![alt text](https://ravindrajob.blob.core.windows.net/assets/FW-AzureDNS2Legacy-LL.png)
