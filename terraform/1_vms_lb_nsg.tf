@@ -10,7 +10,8 @@ data "azurerm_virtual_network" "sandbox_vnet" {
 
 data "azurerm_subnet" "subnet_1" {
   name                 = "sandbox-subnet"
-  virtual_network_name = azurerm_virtual_network.sandbox_vnet.name
+  resource_group_name  = data.azurerm_resource_group.sandbox_rg.name
+  virtual_network_name = data.azurerm_virtual_network.sandbox_vnet.name
 }
 
 # Create private Load Balancer
@@ -20,15 +21,16 @@ resource "azurerm_lb" "sandbox_lb" {
   resource_group_name = data.azurerm_resource_group.sandbox_rg.name
 
   frontend_ip_configuration {
-    name                                  = "PrivateIPAddress"
-    subnet_id                             = data.azurerm_subnet.subnet_1.id
-    private_private_ip_address_allocation = "Dynamic"
+    name                          = "PrivateIPAddress"
+    subnet_id                     = data.azurerm_subnet.subnet_1.id
+    private_ip_address_allocation = "Dynamic"
   }
 }
 
 resource "azurerm_lb_backend_address_pool" "sandbox_backendpool" {
-  loadbalancer_id = azurerm_lb.sandbox_lb.id
-  name            = "BackEndAddressPool"
+  loadbalancer_id     = azurerm_lb.sandbox_lb.id
+  resource_group_name = data.azurerm_resource_group.sandbox_rg.name
+  name                = "BackEndAddressPool"
 }
 
 resource "azurerm_lb_rule" "example" {
