@@ -73,6 +73,19 @@ resource "azurerm_network_interface" "nic_instance_2" {
   }
 }
 
+# Associate NICs to LB Backend pool
+resource "azurerm_network_interface_backend_address_pool_association" "nic_1_to_backend_pool" {
+  network_interface_id    = azurerm_network_interface.nic_instance_1.id
+  ip_configuration_name   = "ip-instance-1"
+  backend_address_pool_id = azurerm_lb_backend_address_pool.sandbox_backendpool.id
+}
+
+resource "azurerm_network_interface_backend_address_pool_association" "nic_2_to_backend_pool" {
+  network_interface_id    = azurerm_network_interface.nic_instance_2.id
+  ip_configuration_name   = "ip-instance-2"
+  backend_address_pool_id = azurerm_lb_backend_address_pool.sandbox_backendpool.id
+}
+
 # Associate NSG to subnet
 resource "azurerm_subnet_network_security_group_association" "subnet_nsg_association" {
   subnet_id                 = data.azurerm_subnet.subnet_1.id
