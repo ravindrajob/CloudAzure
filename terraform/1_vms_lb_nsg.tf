@@ -26,6 +26,21 @@ resource "azurerm_lb" "sandbox_lb" {
   }
 }
 
+resource "azurerm_lb_backend_address_pool" "sandbox_backendpool" {
+  loadbalancer_id = azurerm_lb.sandbox_lb.id
+  name            = "BackEndAddressPool"
+}
+
+resource "azurerm_lb_rule" "example" {
+  resource_group_name            = data.azurerm_resource_group.sandbox_rg.name
+  loadbalancer_id                = azurerm_lb.sandbox_lb.id
+  name                           = "LBRule"
+  protocol                       = "Tcp"
+  frontend_port                  = 443
+  backend_port                   = 443
+  frontend_ip_configuration_name = "PrivateIPAddress"
+}
+
 # Create NSG
 resource "azurerm_network_security_group" "nsg_sandbox" {
   name                = "sandbox-nsg"
