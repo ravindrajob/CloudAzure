@@ -7,6 +7,7 @@ More information on Azure private dns and this limit here : https://docs.microso
 ## Quota & Limit
 DNS forwarding also enables DNS resolution between virtual networks, and allows your on-premises machines to resolve Azure-provided host names. In order to resolve a VM's host name, the DNS server VM must reside in the same virtual network, and be configured to forward host name queries to Azure
 
+Actualy the number of DNS queries a virtual machine can send to Azure DNS resolver: 1000 /sec
 more information here : https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits
 ## Configuration
 To configure properly, we need :
