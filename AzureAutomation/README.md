@@ -1,5 +1,5 @@
 # Structure
-In our case we use this architecture to collect and alert
+In our case, we used the following architecture to collect data and trigger alerts
 
 Workers --> DataBase --> Restitution & Alerting --> Notification
 
