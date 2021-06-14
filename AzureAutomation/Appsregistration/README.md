@@ -11,7 +11,7 @@ See the ApplicationsRegistrations.ps1
 ![alt text](https://ravindrajob.blob.core.windows.net/assets/hourly-apps.png)
 
 ## 4. Check the result
-### The query to show the last 25 expirations
+### The query show the last 25 expirations
 ```sql
 NameOfAppsRegistration_CL
 | where isnotempty(timestampunix_s)
