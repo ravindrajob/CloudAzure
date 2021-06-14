@@ -7,5 +7,5 @@ Result with Azure components
 ![alt text](https://ravindrajob.blob.core.windows.net/assets/diagram01.png)
 ## Dependencies
 
-### Don't forget to add the OMSIngestionAPI librairy in your Az automation  : 
+### Don't forget to add the OMSIngestionAPI library in your Az automation  : 
 ![alt text](https://ravindrajob.blob.core.windows.net/assets/LibrairyOMS.png)
