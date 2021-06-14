@@ -3,7 +3,8 @@ In our case we use this architecture to collect and alert
 
 Workers --> DataBase --> Restitution & Alerting --> Notification
 
-Result with Azure components
+### Result with Azure components:
+
 ![alt text](https://ravindrajob.blob.core.windows.net/assets/diagram01.png)
 ## Dependencies
 
