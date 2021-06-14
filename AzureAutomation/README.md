@@ -9,5 +9,3 @@ Result with Azure components
 
 ### Don't forget to add the OMSIngestionAPI librairy in your Az automation  : 
 ![alt text](https://ravindrajob.blob.core.windows.net/assets/LibrairyOMS.png)
-### Don't forget to add the OMSIngestionAPI librairy in your Az automation  : 
-![alt text](https://ravindrajob.blob.core.windows.net/assets/LibrairyOMS.png)
