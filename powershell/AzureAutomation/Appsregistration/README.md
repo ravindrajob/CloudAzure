@@ -1,13 +1,16 @@
-## Show expired
+## Show expired apps registrations
 Azure do not have a native feature to report on expiring App registrations. The purprose of azure is to provide an automated mechanism of calculating and ingesting the expiration dates into Log Analytics and automatically notify resources when expiration is within threshold.
 
-### Here a example with a runbook.
+## 1. Create and run the RunBook
+See the ApplicationsRegistrations.ps1
 
-## 1. Create a RunBook
-
-## 2. check the result in logs analytics
+## 2. Check the result in logs analytics
 ![alt text](https://ravindrajob.blob.core.windows.net/assets/widget3.png)
 
+## 3. Create a schedule
+![alt text](https://ravindrajob.blob.core.windows.net/assets/hourly-apps.png)
+
+## 4. Check the result
 ### The query to show the last 25 expirations
 ```sql
 NameOfAppsRegistration_CL
@@ -18,14 +21,7 @@ NameOfAppsRegistration_CL
 | order by todatetime(EndDate_s) asc
 | take 25
 ```
-
-## 3. Display the result in grafana
-
+## 5. Display the result in grafana
 ![alt text](https://ravindrajob.blob.core.windows.net/assets/widget2.png)
-
-Tips to show the correctly days  :
+#### Tips to show correctly days in grafana widget:
 ![alt text](https://ravindrajob.blob.core.windows.net/assets/grafana-appsregistration.png)
-
-###
-
-
