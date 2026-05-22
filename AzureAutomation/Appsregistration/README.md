@@ -1,11 +1,8 @@
 <!--
-################################################################
-# Titre: Appsregistration README
-# Description : Documentation for monitoring expired App registrations
-# Auteur: Ravindra JOB
-# Source: https://github.com/ravindrajob/
-# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
-################################################################
+# Appsregistration README
+> **Architecture :** Documentation for monitoring expired App registrations | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
+
 -->
 
 ## Show expired apps registrations

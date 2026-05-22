@@ -1,10 +1,7 @@
-################################################################
-# Titre: Observability (Azure Monitor) - README
-# Description : Pourquoi instrumenter chaque brique de la Landing Zone
-# Auteur: Ravindra JOB
-# Source: https://github.com/ravindrajob/
-# Update: 22/05/2026 [v1.2 | RJ]
-################################################################
+# Observability (Azure Monitor)
+> **Architecture :** Pourquoi instrumenter chaque brique de la Landing Zone | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
+
 
 # Observability (Azure Monitor)
 

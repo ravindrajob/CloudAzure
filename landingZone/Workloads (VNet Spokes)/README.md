@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - Workloads (VNet Spokes)
-### Version: v1.2
+# Workloads (VNet Spokes)
+> **Architecture :** Provisionnement de réseaux virtuels (VNets) isolés pour l'hébergement des workloads applicatifs, connectés au Hub via le peering VNet et respectant une topologie Hub & Spoke. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Provisionnement de réseaux virtuels (VNets) isolés pour l'hébergement des workloads applicatifs, connectés au Hub via le peering VNet et respectant une topologie Hub & Spoke.
 
 ## Hardening & Gouvernance
 - **NSG Stricts** : Application systématique de Network Security Groups (NSG) sur chaque sous-réseau avec des règles par défaut "Deny All".

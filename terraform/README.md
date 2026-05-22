@@ -1,11 +1,8 @@
 <!--
-################################################################
-# Titre: Terraform README
-# Description : Simple Terraform example documentation
-# Auteur: Ravindra JOB
-# Source: https://github.com/ravindrajob/
-# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
-################################################################
+# Terraform README
+> **Architecture :** Simple Terraform example documentation | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
+
 -->
 
 # CloudAzure

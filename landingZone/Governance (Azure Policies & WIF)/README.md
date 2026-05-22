@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - Governance (Azure Policies & WIF)
-### Version: v1.2
+# Governance (Azure Policies & WIF)
+> **Architecture :** Mécanisme central de gouvernance et de conformité automatisée via Azure Policy, couplé à la gestion d'identité moderne via Workload Identity Federation (WIF). | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Mécanisme central de gouvernance et de conformité automatisée via Azure Policy, couplé à la gestion d'identité moderne via Workload Identity Federation (WIF).
 
 ## Hardening & Gouvernance
 - **Guardrails Azure Policy** : Déploiement d'initiatives de conformité (ex: ISO 27001, PCI-DSS) pour empêcher la création de ressources non conformes.

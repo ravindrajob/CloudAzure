@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - Firewall (Azure Firewall Premium)
-### Version: v1.2
+# Firewall (Azure Firewall Premium)
+> **Architecture :** Pare-feu réseau managé de nouvelle génération (NGFW) offrant une protection de haut niveau pour les ressources du VNet Azure, avec inspection profonde du trafic. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Pare-feu réseau managé de nouvelle génération (NGFW) offrant une protection de haut niveau pour les ressources du VNet Azure, avec inspection profonde du trafic.
 
 ## Hardening & Gouvernance
 - **IDPS Premium** : Activation du système de détection et de prévention d'intrusions (IDPS) basé sur les signatures pour bloquer les menaces connues.

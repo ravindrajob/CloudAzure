@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - Connectivity (ExpressRoute)
-### Version: v1.2
+# Connectivity (ExpressRoute)
+> **Architecture :** Établissement d'une connexion privée, résiliente et à haut débit entre l'infrastructure on-premises et Azure via un circuit ExpressRoute, contournant l'Internet public. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Établissement d'une connexion privée, résiliente et à haut débit entre l'infrastructure on-premises et Azure via un circuit ExpressRoute, contournant l'Internet public.
 
 ## Hardening & Gouvernance
 - **Chiffrement en Transit** : Option de déploiement d'IPsec over ExpressRoute pour garantir un chiffrement de bout en bout conforme aux normes de sécurité élevées.

@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - Kubernetes (AKS Private)
-### Version: v1.2
+# Kubernetes (AKS Private)
+> **Architecture :** Déploiement de clusters Azure Kubernetes Service (AKS) en mode entièrement privé, isolant le plan de contrôle et les worker nodes du réseau public. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Déploiement de clusters Azure Kubernetes Service (AKS) en mode entièrement privé, isolant le plan de contrôle et les worker nodes du réseau public.
 
 ## Hardening & Gouvernance
 - **API Server Isolation** : Utilisation d'un endpoint privé pour l'accès à l'API Kubernetes, accessible uniquement via un réseau VPN/ExpressRoute autorisé.

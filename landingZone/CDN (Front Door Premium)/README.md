@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - CDN (Front Door Premium)
-### Version: v1.2
+# CDN (Front Door Premium)
+> **Architecture :** Réseau de diffusion de contenu (CDN) moderne et sécurisé, offrant une accélération globale des applications et une protection WAF au niveau de l'Edge. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Réseau de diffusion de contenu (CDN) moderne et sécurisé, offrant une accélération globale des applications et une protection WAF au niveau de l'Edge.
 
 ## Hardening & Gouvernance
 - **WAF à l'Edge** : Protection contre les attaques L7 (OWASP Top 10) au plus près de l'utilisateur, avant que le trafic n'atteigne le réseau Azure.

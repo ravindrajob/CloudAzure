@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - AI (Azure AI Foundry)
-### Version: v1.2
+# AI (Azure AI Foundry)
+> **Architecture :** Plateforme unifiée pour le développement, le déploiement et la gestion des modèles d'IA (incluant Azure OpenAI), offrant un environnement sécurisé pour les cycles de vie ML/IA. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Plateforme unifiée pour le développement, le déploiement et la gestion des modèles d'IA (incluant Azure OpenAI), offrant un environnement sécurisé pour les cycles de vie ML/IA.
 
 ## Hardening & Gouvernance
 - **Sécurisation des Workspaces** : Déploiement des espaces de travail Azure AI avec isolation réseau complète (No Public IP).

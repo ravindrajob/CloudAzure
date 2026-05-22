@@ -1,11 +1,8 @@
 <!--
-################################################################
-# Titre: Azure Private Endpoint README
-# Description : Documentation for Azure Private DNS and DNS forwarding
-# Auteur: Ravindra JOB
-# Source: https://github.com/ravindrajob/
-# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
-################################################################
+# Azure Private Endpoint README
+> **Architecture :** Documentation for Azure Private DNS and DNS forwarding | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
+
 -->
 
 ### Azure private and legagy

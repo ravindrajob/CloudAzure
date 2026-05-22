@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - AISecurity (A2A Proxy)
-### Version: v1.2
+# AISecurity (A2A Proxy)
+> **Architecture :** Proxy de sécurité spécialisé pour l'intermédiation des communications Agent-to-Agent (A2A) et la protection des flux d'inférence d'IA au sein de l'écosystème Azure. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Proxy de sécurité spécialisé pour l'intermédiation des communications Agent-to-Agent (A2A) et la protection des flux d'inférence d'IA au sein de l'écosystème Azure.
 
 ## Hardening & Gouvernance
 - **Inspection de Payload** : Analyse en temps réel des flux pour détecter les injections de prompts malveillants et l'exfiltration de données sensibles.

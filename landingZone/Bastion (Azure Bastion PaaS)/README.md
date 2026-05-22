@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - Bastion (Azure Bastion PaaS)
-### Version: v1.2
+# Bastion (Azure Bastion PaaS)
+> **Architecture :** Fourniture d'un accès RDP/SSH sécurisé et sans agent aux machines virtuelles Azure directement via le portail Azure sur SSL, sans exposition d'IP publiques. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Fourniture d'un accès RDP/SSH sécurisé et sans agent aux machines virtuelles Azure directement via le portail Azure sur SSL, sans exposition d'IP publiques.
 
 ## Hardening & Gouvernance
 - **Accès sans IP Publique** : Élimination du besoin d'assigner des adresses IP publiques aux VMs pour l'administration.

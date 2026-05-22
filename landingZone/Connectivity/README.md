@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - Connectivity
-### Version: v1.2
+# Connectivity
+> **Architecture :** Module transverse gérant l'interconnexion globale des réseaux, incluant le Hub VNet, les passerelles VPN et le routage centralisé. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Module transverse gérant l'interconnexion globale des réseaux, incluant le Hub VNet, les passerelles VPN et le routage centralisé.
 
 ## Hardening & Gouvernance
 - **Hub-and-Spoke Topology** : Mise en œuvre d'une architecture centralisée pour une gestion uniforme de la sécurité et du routage.

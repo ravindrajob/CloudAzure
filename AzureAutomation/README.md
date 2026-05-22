@@ -1,11 +1,8 @@
 <!--
-################################################################
-# Titre: Azure Automation README
-# Description : Documentation for Azure Automation scripts and architecture
-# Auteur: Ravindra JOB
-# Source: https://github.com/ravindrajob/
-# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
-################################################################
+# Azure Automation README
+> **Architecture :** Documentation for Azure Automation scripts and architecture | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
+
 -->
 
 # Structure
@@ -17,4 +14,4 @@ Workers --> DataBase --> Restitution & Alerting --> Notification
 
 ## Dependencies
 
-### Don't forget to add the OMSIngestionAPI library in your Az automation  : 
+### Don't forget to add the OMSIngestionAPI library in your Az automation  :

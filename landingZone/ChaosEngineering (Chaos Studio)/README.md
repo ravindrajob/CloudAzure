@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - ChaosEngineering (Chaos Studio)
-### Version: v1.2
+# ChaosEngineering (Chaos Studio)
+> **Architecture :** Solution managée pour l'expérimentation de fautes sur Azure (Chaos Studio), permettant de mesurer et d'améliorer la résilience des applications et de l'infrastructure. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Solution managée pour l'expérimentation de fautes sur Azure (Chaos Studio), permettant de mesurer et d'améliorer la résilience des applications et de l'infrastructure.
 
 ## Hardening & Gouvernance
 - **Expériences par Permissions** : Utilisation d'identités managées avec le principe du moindre privilège pour l'exécution des injections de fautes.

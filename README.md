@@ -1,10 +1,7 @@
-################################################################
-# Titre: CloudAzure - README
-# Description : Lab de simulation Microsoft Azure Hardened
-# Auteur: Ravindra JOB
-# Source: https://github.com/ravindrajob/
-# Update: 22/05/2026 [v2.2 | RJ]
-################################################################
+# CloudAzure
+> **Architecture :** Lab de simulation Microsoft Azure Hardened | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
+
 
 # Microsoft Azure : Landing Zone Hardened
 

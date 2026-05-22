@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - Documentation (Architecture)
-### Version: v1.2
+# Documentation (Architecture)
+> **Architecture :** Référentiel centralisé pour la documentation technique, les schémas d'architecture et les registres de décisions (ADR) de la landing zone Azure. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Référentiel centralisé pour la documentation technique, les schémas d'architecture et les registres de décisions (ADR) de la landing zone Azure.
 
 ## Hardening & Gouvernance
 - **Docs as Code** : Utilisation du format Markdown pour une intégration fluide dans les pipelines de CI/CD et une traçabilité via Git.

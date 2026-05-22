@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - ReverseProxy (Application Gateway WAF v2)
-### Version: v1.2
+# ReverseProxy (Application Gateway WAF v2)
+> **Architecture :** Équilibreur de charge de couche 7 (HTTP/HTTPS) offrant des capacités de routage avancé et une protection Web Application Firewall (WAF) intégrée. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Équilibreur de charge de couche 7 (HTTP/HTTPS) offrant des capacités de routage avancé et une protection Web Application Firewall (WAF) intégrée.
 
 ## Hardening & Gouvernance
 - **WAF v2 Managed Rules** : Utilisation des jeux de règles managés par Microsoft (DRS) pour une protection contre les vulnérabilités courantes.

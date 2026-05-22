@@ -1,9 +1,7 @@
-# Ravindra JOB - Cloud Architect
-## Composant Landing Zone - DNS (Azure Private DNS)
-### Version: v1.2
+# DNS (Azure Private DNS)
+> **Architecture :** Service de résolution de noms de domaine hautement disponible et sécurisé pour les ressources au sein des VNets Azure, sans exposition sur l'Internet public. | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
+---
 
-## Rôle du composant
-Service de résolution de noms de domaine hautement disponible et sécurisé pour les ressources au sein des VNets Azure, sans exposition sur l'Internet public.
 
 ## Hardening & Gouvernance
 - **Virtual Network Links** : Association explicite des zones DNS uniquement aux VNets autorisés, empêchant les fuites d'informations DNS.
