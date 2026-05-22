@@ -21,7 +21,8 @@ L'infrastructure est modulaire et suit une logique de séparation des responsabi
 2.  **`landing-zone-caf/01-connectivity/`** : Hub de transit moderne utilisant **Azure Virtual WAN** et **Azure Firewall Premium**.
 3.  **`landing-zone-caf/02-spokes/`** : Réseaux applicatifs isolés avec accès PaaS sécurisé via **Azure Private Link**.
 4.  **`landing-zone-caf/03-security-a2a/`** : Architecture de gateway de sécurité pour **Azure OpenAI**, implémentant le concept **Action-to-Action (A2A)**.
-5.  **`landing-zone-caf/docs-architecture/`** : Documentation industrielle exhaustive (Governance, Networking, Security).
+5.  **`landing-zone-caf/04-aks-cluster/`** : Déploiement d'un cluster AKS privé avec Azure CNI, RBAC Entra ID et protection réseau native.
+6.  **`landing-zone-caf/docs-architecture/`** : Documentation industrielle exhaustive (Governance, Networking, Security).
 
 ## 🔒 Sécurité par Design
 - **Zéro IP Publique** : Utilisation systématique d'**Azure Bastion** pour l'administration.
@@ -29,4 +30,3 @@ L'infrastructure est modulaire et suit une logique de séparation des responsabi
 - **Filtrage L7** : Inspection TLS et IDPS via le pare-feu Premium.
 
 ---
-*Ce dépôt est maintenu par Ravindra JOB, ingénieur passionné par l'automatisation et la cybersécurité.*

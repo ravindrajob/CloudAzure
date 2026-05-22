@@ -23,4 +23,3 @@ Nous implémentons une gateway de sécurité (A2A) sur Azure OpenAI.
 - **Audit Logs** : Chaque interaction agent-modèle est enregistrée et auditée en temps réel.
 
 ---
-*Vision sécuritaire intransigeante portée par Ravindra JOB.*

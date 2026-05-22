@@ -29,4 +29,3 @@ Conformément aux principes de sécurité **Zéro Trust**, le pipeline n'utilise
 Le fichier de workflow est disponible dans `.github/workflows/deploy-lz.yml`. 
 
 ---
-*Orchestration SRE conçue pour la scalabilité par Ravindra JOB.*
