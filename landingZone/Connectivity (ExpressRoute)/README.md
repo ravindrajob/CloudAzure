@@ -1,23 +1,25 @@
-################################################################
-# Titre: Connectivity (ExpressRoute) - README
-# Description : Pourquoi privatiser la liaison hybride
-# Auteur: Ravindra JOB
-# Source: https://github.com/ravindrajob/
-# Update: 22/05/2026 [v1.0 | RJ]
-################################################################
+# Ravindra JOB - Cloud Architect
+## Composant Landing Zone - Connectivity (ExpressRoute)
+### Version: v1.2
 
-# Connectivity (Azure ExpressRoute)
+## Rôle du composant
+Établissement d'une connexion privée, résiliente et à haut débit entre l'infrastructure on-premises et Azure via un circuit ExpressRoute, contournant l'Internet public.
 
-💡 **Rôle du composant :** 
-Établir une connexion privée, dédiée et haute performance entre le datacenter On-Premise et Azure, sans passer par l'Internet public.
+## Hardening & Gouvernance
+- **Chiffrement en Transit** : Option de déploiement d'IPsec over ExpressRoute pour garantir un chiffrement de bout en bout conforme aux normes de sécurité élevées.
+- **Diversité de Circuit** : Configuration de circuits secondaires et de passerelles hautement disponibles pour assurer une résilience maximale (SLA 99.95%+).
+- **Filtrage de Routes** : Utilisation de filtres BGP et de limites de préfixes pour empêcher l'injection de routes non autorisées dans le réseau Azure.
+- **Supervision Network Insights** : Monitoring continu de la bande passante, des erreurs de circuit et de la latence via Azure Monitor Network Insights.
+- **Standards** : Conformité avec les architectures "Hybrid Networking" de l'Azure CAF.
 
-## Pourquoi ce choix technique ?
-**ExpressRoute** est choisi pour garantir une latence minimale et une bande passante stable. Contrairement au VPN S2S, les données ne transitent pas par le Web, réduisant drastiquement le risque d'interception et de congestion.
+## Schéma Mermaid
+```mermaid
+graph LR
+    OnPrem[On-Premises DC] <--> |ExpressRoute Circuit| ERP[Edge Router Partner]
+    ERP <--> |MSEE| ERGW[ExpressRoute Gateway]
+    ERGW <--> HubVNet[Hub VNet]
+    HubVNet <--> Spokes[Spoke VNets]
+```
 
-## Hardening spécifique (vs Standard)
-- **Circuit Privé :** Les données circulent sur une fibre dédiée via un partenaire (ex: Equinix).
-- **vWAN Integration :** La gateway est directement rattachée au **Virtual Hub**, permettant aux Spokes d'accéder au On-Premise via le routage centralisé du vWAN sans peering maillé.
-- **Monitoring :** Activation des métriques de circuit pour détecter toute dégradation de signal à la source.
-
----
+## Conclusion
 Adoption industrialisée du CAF avec surcouche de sécurité et intégration des pratiques CNCF.
