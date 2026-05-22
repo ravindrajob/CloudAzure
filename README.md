@@ -9,9 +9,9 @@
 # CloudAzure - Lab de Simulation Microsoft Azure
 
 💡 **Philosophie & Partage :** 
-Ce dépôt est un laboratoire de démonstration pour les architectures **Microsoft Azure**. Il reflète mon approche méticuleuse et sécurisée de l'infrastructure "Cloud Native". 
+Ce dépôt est un laboratoire de démonstration pour les architectures **Microsoft Azure**. Il reflète une approche standardisée et sécurisée de l'infrastructure "Cloud Native". 
 
-Les configurations Terraform ici présentes sont des simulations conçues pour partager des bonnes pratiques sur le domaine **ravindra-job.com**. (OPSEC oblige, mon infrastructure réelle est isolée).
+Les configurations Terraform ici présentes sont des simulations conçues pour partager des bonnes pratiques sur le domaine **ravindra-job.com**. (OPSEC oblige, l' infrastructure réelle est isolée).
 
 ## 🏗️ Architecture du Lab (Landing Zone CAF)
 
