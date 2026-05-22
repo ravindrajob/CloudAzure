@@ -25,4 +25,4 @@ az aks get-credentials --resource-group lab-rg --name lab-aks-cluster
 kubectl apply -f app-demo-manifests/
 ```
 ---
-*Standard industriel AKS validé par Ravindra JOB.*
+Adoption industrialisée du CAF avec surcouche de sécurité et intégration des pratiques CNCF.

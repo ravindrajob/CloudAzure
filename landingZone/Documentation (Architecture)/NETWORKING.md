@@ -26,4 +26,4 @@ Tout le trafic inter-VNet et sortant vers Internet est inspecté par l'**Azure F
 - **Filtrage FQDN** : Autorisation uniquement pour les domaines nécessaires (ex: `*.ravindra-job.com`).
 
 ---
-*Architecture réseau industrielle validée par Ravindra JOB.*
+Adoption industrialisée du CAF avec surcouche de sécurité et intégration des pratiques CNCF.

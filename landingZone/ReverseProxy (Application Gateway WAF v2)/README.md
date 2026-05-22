@@ -21,4 +21,4 @@ L'**Application Gateway v2** est choisie pour son support natif d'**Envoy** (en 
 - **DDoS Protection Standard** : Couplé à l'AppGW pour encaisser les attaques volumétriques massives.
 
 ---
-*Standard de sécurisation Web validé par Ravindra JOB.*
+Adoption industrialisée du CAF avec surcouche de sécurité et intégration des pratiques CNCF.

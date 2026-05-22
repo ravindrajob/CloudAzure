@@ -25,4 +25,4 @@ Nous bannissons l'usage des **Client Secrets** (clés statiques).
 - **Managed Identities** : Chaque ressource Azure possède sa propre identité système pour accéder au Key Vault ou aux bases de données.
 
 ---
-*Gouvernance méticuleuse conçue par Ravindra JOB.*
+Adoption industrialisée du CAF avec surcouche de sécurité et intégration des pratiques CNCF.

@@ -20,4 +20,4 @@
 - **Monitoring :** Activation des métriques de circuit pour détecter toute dégradation de signal à la source.
 
 ---
-*Architecture hybride validée par Ravindra JOB.*
+Adoption industrialisée du CAF avec surcouche de sécurité et intégration des pratiques CNCF.
