@@ -1,3 +1,13 @@
+<!--
+################################################################
+# Titre: Azure Automation README
+# Description : Documentation for Azure Automation scripts and architecture
+# Auteur: Ravindra JOB
+# Source: https://github.com/ravindrajob/
+# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
+################################################################
+-->
+
 # Structure
 In our case, we used the following architecture to collect data and trigger alerts
 

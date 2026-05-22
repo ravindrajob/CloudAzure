@@ -1,3 +1,11 @@
+################################################################
+# Titre: scanVnet.ps1
+# Description : Scan VNET peering status across subscriptions
+# Auteur: Ravindra JOB
+# Source: https://github.com/ravindrajob/
+# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
+################################################################
+
 <#
 .SYNOPSIS
 !powershell

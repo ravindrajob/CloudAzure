@@ -1,3 +1,11 @@
+################################################################
+# Titre: ApplicationGateway.ps1
+# Description : Scan Application Gateway quotas (v1/v2) and send to Log Analytics
+# Auteur: Ravindra JOB
+# Source: https://github.com/ravindrajob/
+# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
+################################################################
+
 <#
 .SYNOPSIS
 !powershell

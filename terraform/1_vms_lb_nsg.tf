@@ -1,3 +1,11 @@
+################################################################
+# Titre: 1_vms_lb_nsg.tf
+# Description : Terraform configuration for VMs, Load Balancer, and NSG
+# Auteur: Ravindra JOB
+# Source: https://github.com/ravindrajob/
+# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
+################################################################
+
 # Reference resources created in another tfstate 
 data "azurerm_resource_group" "sandbox_rg" {
   name = "sandbox"

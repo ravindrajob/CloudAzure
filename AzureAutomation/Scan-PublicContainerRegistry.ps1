@@ -1,3 +1,11 @@
+################################################################
+# Titre: Scan-PublicContainerRegistry.ps1
+# Description : Scan for public Azure Container Registries and send to Log Analytics
+# Auteur: Ravindra JOB
+# Source: https://github.com/ravindrajob/
+# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
+################################################################
+
 #on récupère les credentials du Workspace
 $WorkspaceCredential = Get-AutomationPSCredential -Name 'WorkspaceCredential'
 $CustomerId = $WorkspaceCredential.UserName

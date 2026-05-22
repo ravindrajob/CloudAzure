@@ -1,3 +1,13 @@
+<!--
+################################################################
+# Titre: Appsregistration README
+# Description : Documentation for monitoring expired App registrations
+# Auteur: Ravindra JOB
+# Source: https://github.com/ravindrajob/
+# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
+################################################################
+-->
+
 ## Show expired apps registrations
 Azure do not have a native feature to report on expiring App registrations. The purprose of azure is to provide an automated mechanism of calculating and ingesting the expiration dates into Log Analytics and automatically notify resources when expiration is within threshold.
 

@@ -1,3 +1,11 @@
+################################################################
+# Titre: runbook-ScanAzurednsQuota.ps1
+# Description : Scan Azure Private DNS zone quotas and send to Log Analytics
+# Auteur: Ravindra JOB
+# Source: https://github.com/ravindrajob/
+# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
+################################################################
+
 <#
 .SYNOPSIS
 !powershell

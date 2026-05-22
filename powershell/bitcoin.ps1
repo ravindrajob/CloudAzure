@@ -1,3 +1,11 @@
+################################################################
+# Titre: bitcoin.ps1
+# Description : Real-time Bitcoin price tracker using CEX.IO API
+# Auteur: Ravindra JOB
+# Source: https://github.com/ravindrajob/
+# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
+################################################################
+
 #On rentre les informations de la CLEF API 
  $User = "UserKey"
  $Key = "PasswordKey"

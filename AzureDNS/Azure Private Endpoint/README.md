@@ -1,3 +1,13 @@
+<!--
+################################################################
+# Titre: Azure Private Endpoint README
+# Description : Documentation for Azure Private DNS and DNS forwarding
+# Auteur: Ravindra JOB
+# Source: https://github.com/ravindrajob/
+# Update: 12/10/2025 [v1.1 | RJ] Maintenance & Branding update
+################################################################
+-->
+
 ### Azure private and legagy
 In our case, we want resolve azure private FQDN with Azure DNS, and resolve my legacy fqdn with my private DNS server. 
 
