@@ -20,6 +20,7 @@ L'infrastructure est découpée en briques logiques permettant une promotion mod
 | :--- | :--- | :--- |
 | **`Governance`** | Policies & Compliance | Azure Policies (No Public IP), Enforce Private Link, WIF. |
 | **`Connectivity`** | Network Hub | Virtual WAN (vWAN), Hub-and-Spoke centralisé. |
+| **`Connectivity`** | Hybrid Link | ExpressRoute (Metered), circuit dédié Paris, vWAN Gateway. |
 | **`Firewall`** | Perimeter Security | Azure Firewall Premium, inspection TLS, IDPS. |
 | **`Bastion`** | Zéro Trust Access | Azure Bastion PaaS pour l'administration sans IP publique. |
 | **`Kubernetes`** | Orchestration | AKS Private Cluster, Azure CNI, RBAC Entra ID. |
