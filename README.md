@@ -1,32 +1,43 @@
 ################################################################
 # Titre: CloudAzure - README
-# Description : Lab de simulation Azure Hardened (CAF & CNCF)
+# Description : Lab de simulation Microsoft Azure Hardened
 # Auteur: Ravindra JOB
 # Source: https://github.com/ravindrajob/
-# Update: 26/11/2025 [v2.0 | RJ] Major update with Landing Zone CAF
+# Update: 22/05/2026 [v2.2 | RJ]
 ################################################################
 
-# CloudAzure - Lab de Simulation Microsoft Azure
+# Microsoft Azure : Landing Zone Hardened
 
-💡 **Philosophie & Partage :** 
-Ce dépôt est un laboratoire de démonstration pour les architectures **Microsoft Azure**. Il reflète une approche standardisée et sécurisée de l'infrastructure "Cloud Native". 
-
-Les configurations Terraform ici présentes sont des simulations conçues pour partager des bonnes pratiques sur le domaine **ravindra-job.com**. (OPSEC oblige, l' infrastructure réelle est isolée).
-
-## 🏗️ Architecture du Lab (Landing Zone CAF)
-
-L'infrastructure est modulaire et suit une logique de séparation des responsabilités (**1 dossier = 1 composant**) :
-
-1.  **`landing-zone-caf/00-governance/`** : Verrouillage au niveau Management Group via **Azure Policies** (No Public IPs, WIF Force).
-2.  **`landing-zone-caf/01-connectivity/`** : Hub de transit moderne utilisant **Azure Virtual WAN** et **Azure Firewall Premium**.
-3.  **`landing-zone-caf/02-spokes/`** : Réseaux applicatifs isolés avec accès PaaS sécurisé via **Azure Private Link**.
-4.  **`landing-zone-caf/03-security-a2a/`** : Architecture de gateway de sécurité pour **Azure OpenAI**, implémentant le concept **Action-to-Action (A2A)**.
-5.  **`landing-zone-caf/04-aks-cluster/`** : Déploiement d'un cluster AKS privé avec Azure CNI, RBAC Entra ID et protection réseau native.
-6.  **`landing-zone-caf/docs-architecture/`** : Documentation industrielle exhaustive (Governance, Networking, Security).
-
-## 🔒 Sécurité par Design
-- **Zéro IP Publique** : Utilisation systématique d'**Azure Bastion** pour l'administration.
-- **Identité Zéro Trust** : Bannissement des Client Secrets au profit du **Workload Identity Federation (WIF)**.
-- **Filtrage L7** : Inspection TLS et IDPS via le pare-feu Premium.
+Ce dépôt centralise les briques d'infrastructure (IaC) nécessaires au déploiement d'une **Landing Zone** industrielle sur Azure. L'architecture suit les recommandations du **Cloud Adoption Framework (CAF)** de Microsoft et les principes de la **CNCF**.
 
 ---
+
+### 🧱 Architecture du Lab
+
+L'infrastructure est découpée en briques logiques permettant une promotion modulaire de l'environnement.
+
+| Module | Fonctionnalité | Hardening Spécifique |
+| :--- | :--- | :--- |
+| **`Governance`** | Policies & Compliance | Azure Policies (No Public IP), Enforce Private Link, WIF. |
+| **`Connectivity`** | Network Hub | Virtual WAN (vWAN), Hub-and-Spoke centralisé. |
+| **`Firewall`** | Perimeter Security | Azure Firewall Premium, inspection TLS, IDPS. |
+| **`Bastion`** | Zéro Trust Access | Azure Bastion PaaS pour l'administration sans IP publique. |
+| **`Kubernetes`** | Orchestration | AKS Private Cluster, Azure CNI, RBAC Entra ID. |
+| **`ReverseProxy`** | Web Exposition | Application Gateway WAF v2, protection OWASP. |
+| **`CDN`** | Edge Security | Front Door Premium, accélération et WAF Edge. |
+| **`AI-Security`** | AI Agent Proxy | Gateway A2A pour la sécurisation des flux Azure OpenAI. |
+
+---
+
+### 🛡️ Principes de Sécurité (Security by Design)
+
+- **Identité Moderne :** Bannissement des Client Secrets au profit du Workload Identity Federation (WIF) et des Managed Identities.
+- **Accès Privé Systématique :** Utilisation intensive d'Azure Private Link. Aucune ressource PaaS n'est exposée sur Internet.
+- **Micro-segmentation :** Utilisation des NSG (Network Security Groups) et filtrage L7 via le Firewall Premium.
+
+### ⚙️ Déploiement & Orchestration
+
+L'orchestration est pilotée par un pipeline GitOps situé dans `.github/workflows/`. Le déploiement s'appuie sur une séquence par couches pour assurer la stabilité du socle d'infrastructure.
+
+---
+*Note : Ce dépôt est un environnement de simulation (Lab). Les configurations sont isolées et utilisent exclusivement le domaine `ravindra-job.com`.*
