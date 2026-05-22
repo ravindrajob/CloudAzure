@@ -1,38 +1,32 @@
-# Observability (Azure Monitor)
-> **Architecture :** Pourquoi instrumenter chaque brique de la Landing Zone | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
----
+# Observability (Azure Monitor) > **Architecture :** Monitoring centralisé et gouvernance des flux | **Version :** v2.3 | **Maintainer :** [Ravindra JOB](https://github.com/ravindrajob/)
 
+## Rôle du composant
+Le déport de l'observabilité est une pratique fondamentale du **SRE (Site Reliability Engineering)** visant à garantir que les signaux critiques (Golden Signals) sont collectés et stockés en dehors du périmètre de production immédiat. Cette approche permet d'éviter les **SPOF (Single Point of Failure)** : en cas de compromission ou de défaillance majeure de la Landing Zone, les traces d'audit et les métriques de performance restent accessibles et intègres dans le socle de sécurité centralisé.
 
-# Observability (Azure Monitor)
+## Hardening & Gouvernance
+La configuration applique des contrôles de sécurité rigoureux conformes aux standards industriels :
+- **Audit DNS (Private DNS Logs) :** Surveillance de toutes les requêtes de résolution interne pour identifier les vecteurs d'exfiltration.
+- **Audit IA A2A (Azure OpenAI) :** Journalisation des prompts et des réponses via Azure API Management pour assurer la conformité au protocole **Action-to-Action**.
+- **NSG Flow Logs :** Audit détaillé du trafic réseau entrant et sortant pour valider les politiques de micro-segmentation.
+- **Diagnostic Settings :** Instrumentation systématique de chaque ressource Azure pour l'envoi des métriques et logs vers le Log Analytics Workspace centralisé.
 
-💡 **Rôle du composant :** 
-Centraliser les journaux d'audit et les métriques de performance de l'intégralité du datacenter Azure, tout en surveillant la sécurité des flux d'IA.
-
-## Pourquoi ce choix technique ?
-L'usage de **Log Analytics** est le standard du **Microsoft CAF**. Nous déportons cette instance dans un projet de sécurité dédié pour garantir que même en cas de compromission d'un Spoke applicatif, les traces d'audit restent inviolables.
-
-## Hardening & Gouvernance (CAF & CNCF)
-- **AI Safety Audit :** Nous capturons les logs de filtrage de contenu et d'audit d'Azure OpenAI pour valider la conformité au protocole **Action-to-Action (A2A)**.
-- **Traffic Analytics :** Activation des NSG Flow Logs couplés à Traffic Analytics pour visualiser les flux réseau et détecter les anomalies de micro-segmentation.
-- **Circuit Monitoring :** Instrumentation spécifique d'ExpressRoute pour surveiller la latence et la perte de paquets sur la liaison hybride.
-
+## Schéma Mermaid
 ```mermaid
 graph TD
     subgraph "Landing Zone (Azure)"
-        Services[AKS, AI, AppGW, ExpressRoute]
+        Services[AKS, Azure AI Foundry, Private DNS]
         Diag[Diagnostic Settings]
     end
     
-    subgraph "Security Project"
+    subgraph "NOC Central (Observability-Monitoring)"
         LAW[Log Analytics Workspace]
-        Watcher[Network Watcher]
+        Dash[Grafana / Azure Monitor Dashboards]
     end
 
     Services --> Diag
     Diag --> LAW
-    Watcher --> LAW
-    LAW --> Grafana[Grafana NOC Central]
+    LAW --> Dash
 ```
 
----
-*Adoption industrialisée du CAF avec surcouche de sécurité et intégration des pratiques CNCF.*
+## Conclusion
+Adoption industrialisée du CAF avec surcouche de sécurité et intégration des pratiques CNCF.
