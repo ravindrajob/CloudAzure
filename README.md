@@ -25,6 +25,8 @@ L'infrastructure est découpée en briques logiques permettant une promotion mod
 | **`CDN`** | Edge Security | Front Door Premium, accélération et WAF Edge. |
 | **`AI-Security`** | AI Agent Proxy | Gateway A2A pour la sécurisation des flux Azure OpenAI. |
 | **`ChaosEngineering`** | Fault Injection | Azure Chaos Studio (Node Shutdown / Network Latency). |
+| **`FinOps`** | Financial Management | Azure Cost Management, export de données et budgets automatisés. |
+| **`SecOps`** | SOC Operations | Microsoft Sentinel (SIEM/SOAR) pour la détection et la remédiation. |
 
 ---
 
