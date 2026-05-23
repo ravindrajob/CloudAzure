@@ -50,17 +50,24 @@ resource "azurerm_firewall_policy_rule_collection_group" "standard_rules" {
 
   # 4. Application Rules (Filtrage FQDN Proxy)
   application_rule_collection {
-    name     = "app_rules_egress_ai"
+    name     = "app_rules_egress_global"
     priority = 200
     action   = "Allow"
     rule {
-      name = "allow-openai-foundry"
+      name = "allow-global-whitelist"
       protocols {
         type = "Https"
         port = 443
       }
       source_addresses  = ["10.0.0.0/8"]
-      destination_fqdns = ["*.openai.azure.com", "api.labs.ravindra-job.com"]
+      destination_fqdns = [
+        "*.openai.azure.com",
+        "api.labs.ravindra-job.com",
+        "*.github.com",
+        "*.githubusercontent.com",
+        "*.microsoft.com",
+        "*.ubuntu.com"
+      ]
       terminate_tls     = true # Activation de l'inspection Proxy
     }
   }
