@@ -24,6 +24,7 @@ L'infrastructure est découpée en briques logiques permettant une promotion mod
 | **`ReverseProxy`** | Web Exposition | Application Gateway WAF v2, protection OWASP. |
 | **`CDN`** | Edge Security | Front Door Premium, accélération et WAF Edge. |
 | **`AI-Security`** | AI Agent Proxy | Gateway A2A pour la sécurisation des flux Azure OpenAI. |
+| **`ChaosEngineering`** | Fault Injection | Azure Chaos Studio (Node Shutdown / Network Latency). |
 
 ---
 
